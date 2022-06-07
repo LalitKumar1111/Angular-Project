@@ -1,0 +1,108 @@
+<!-- <div class="box">
+
+    <div class="icon"></div>
+    <div class="log">Login to Your Account</div>
+
+    <form [formGroup]='userForm'>
+        <div class="form-group">
+            <div class="lab"><label for="username">Username</label></div>
+            <div><input type="text" name="username" id="username" class="form-control user" [ngClass]="{'is-invalid':userForm.controls['username'].invalid, 'is-valid':userForm.controls['username'].valid}" formControlName="username"></div>
+            <div class="text-danger para" *ngIf="userForm.controls['username'].invalid">InValid Username</div>
+        </div>
+        
+        <div class="form-group">
+            <div class="lab"><label for="pwd">Password</label></div>
+            <div><input type="password" name="pwd" id="pwd" class="form-control pawd" [ngClass]="{'is-invalid':userForm.controls['pwd'].invalid,'is-valid':userForm.controls['pwd'].valid}" formControlName="pwd"></div>
+            <div class="text-danger par" *ngIf="userForm.controls['pwd'].invalid">InCorrect Password</div>
+        </div>
+
+    </form>
+
+            
+
+        <br/>
+            <div class="forget">
+                <input type="checkbox" name="me" value="r" id="me" class="mee"/>
+                <label for="me" class="rem">Remember me</label>
+            </div>
+
+            <div class="forget">
+                <p>Forgot Password?</p>
+            </div>
+
+            <div class="clear"></div>
+            <button routerLink="/dashboard">Login</button>
+</div> -->
+
+
+
+<!-- ------------------------------------------------------------------- -->
+
+<!doctype html>
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        <div class="box">
+    
+    
+            <form [formGroup]='userform' (ngSubmit)="onSubmit()">
+                <!-- <div class="bor"></div> -->
+                <div class="col-12 col-sm-12 col-md-12 col-xl-12 col-lg-12 icon"></div>
+                <div class="log">Login to Your Account</div>
+                <div class="form-group">
+                    <div class="lab"><label for="email">E-mail</label></div>
+                    <div><input type="text" placeholder="user@mail.com" name="email" id="email" formControlName="email" class="form-control user" [ngClass]="{'is-invalid': submitted && userform.controls['email'].errors, 'is-valid':userform.controls['email'].valid}"></div>
+                    <!-- <div *ngIf="submitted && userform.controls['email'].errors" class="invalid-feedback"> -->
+                        <div class="p1" *ngIf="submitted && userform.controls['email'].errors.required">Email is required</div>
+                        <div class="p1" *ngIf="submitted && userform.controls['email'].errors.pattern">Invalid email address</div>
+                    <!-- </div> -->
+                </div>
+                
+                <div class="form-group">
+                    <div class="lab"><label for="pwd">Password</label></div>
+                    <div><input type="password" placeholder="(U-L-[#?!@$%^&*-]-[8-20])"  name="pwd" id="pwd" formControlName="password" class="form-control pawd" [ngClass]="{'is-invalid': submitted && userform.controls['password'].errors, 'is-valid':userform.controls['password'].valid}" ></div>
+                    <!-- <div *ngIf="submitted && userform.controls['pwd'].errors" class="invalid-feedback"> -->
+                        <div class="p1" *ngIf="submitted && userform.controls['password'].errors.required">Password is required</div>
+                        <div class="p1" *ngIf="submitted && userform.controls['password'].errors.pattern">Invalid Password</div>
+                    <!-- </div> -->
+                </div>
+                
+                <br/>
+                    <div class="forget">
+                        <input type="checkbox" name="me" value="r" id="me" class="mee"/>
+                        <label for="me" class="rem">Remember me</label>
+                    </div>
+        
+                    <div class="forget">
+                        <p routerLink="/forgot">Forgot Password?</p>
+                    </div>
+        
+                    <div class="clear"></div>
+                    <button type="submit" (click)="dashboard()">Login</button>
+                    <h6 class="text-center text-danger txt2 ">{{msg}}</h6>
+        
+            </form>
+        </div>
+    </body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

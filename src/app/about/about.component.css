@@ -1,0 +1,140 @@
+ /*Home Page*/
+ *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+}
+.navigation-wrap{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: 1000;
+    -webkit-transition:all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.navigation-wrap.scroll-on{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    box-shadow: 0 0.125rem 1.75rem 0 rgb(0,0,0,0);
+    transition: all .15s ease-in-out 0s;
+
+}
+.navigation-wrap .navitem{
+    padding: 0 0.625rem;
+    transition: all 200ms linear;
+}
+.navbar-toggler:focus{
+    outline: unset;
+    border: unset;
+    box-shadow: none;
+}
+.lin{
+    font-size: 0.9375rem;
+    text-align: center;
+    color: rgb(6, 47, 53);
+    letter-spacing: 1px;
+}
+.lin:hover{
+    background-color: rgb(223, 139, 223);
+    color:white;
+}
+.counter-section{
+    background-color: rgb(223, 139, 223);
+    padding-top: 1%;
+    padding-bottom: 0.3%;
+    height: 10%;
+}
+
+/*image*/
+.im{
+  width: 100%;
+  height: 600px;
+}
+.pa{
+    
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: larger;
+    text-align: center;
+    color: rgb(7, 59, 59);
+}
+#he1{
+    font-size: 20px;
+    color: rgb(223, 139, 223);
+    margin-top: 17px;
+}
+.he2{
+    font-size: 55px;
+    color: rgb(223, 139, 223);
+    font-weight: bold;
+}
+.he3{
+    font-size: 55px;
+    color: rgb(223, 139, 223);
+    font-weight: bold;
+    margin-top: -70px;
+}
+.list1{
+    color: grey;
+    margin: 0 auto;
+    margin-left: 120px;
+}
+.list2{
+    color: grey;
+    margin: 0 auto;
+    margin-left: 180px;
+}
+h4{
+    font-weight: bold ;
+    margin-top: 7px;
+    text-align: center;
+}
+.icn{
+    margin-top: 14px;
+}
+.foot{
+  background-color: rgb(3, 28, 32);
+  width: 1263px;
+  height: 200px;
+  margin-top: 20px;
+  margin-left: -74px;
+}
+.add1{
+  color: rgb(6, 77, 77);
+  margin-top: 35px;
+  margin-left: 40px;
+}
+.add2{
+  color: rgb(6, 77, 77);
+  margin-top: 75px;
+}
+.iccn{
+  color: rgb(6, 77, 77);
+  margin-top: 35px;
+  margin-left: -40px;
+}
+.ic1{
+  color:rgb(6, 77, 77) ;
+}
+.ic1:hover{
+  color: violet;
+}
+.ic{
+  color: grey;
+}
+.ic:hover{
+  color: blueviolet;
+}
+.copy{
+  background-color: rgb(1, 19, 22);
+  color: rgb(2, 42, 49);
+  margin-top: 45px;
+}
+.in2{
+  margin-top: 8px;
+}

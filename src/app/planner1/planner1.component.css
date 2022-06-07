@@ -1,0 +1,15 @@
+.box{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(16, 145, 145);
+    margin-bottom: -18px;
+}
+.text1{
+    color: aliceblue;
+    font-size: 50px;
+    padding-top: 190px;
+}
+.text2{
+    color: aliceblue;
+    font-size: 18px;
+}

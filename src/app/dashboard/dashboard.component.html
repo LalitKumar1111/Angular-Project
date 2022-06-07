@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+
+    <title>Graphics Design and Web Developement</title>
+
+  </head>
+  <body>
+    <!-- Header -->
+
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light navigation-wrap">
+          <div class="container-fluid">
+            <div class="backg">
+              <img src="assets/media/logo.png" class="bord" width="35" height="30" alt="logo">
+              <a class="navbar-brand" routerLink="/dashboard" style="font-size: 22px;"><b>BLACKBOX DESIGN</b></a>
+            
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <div class="navbar-nav ms-auto">
+                <ul class="navbar-nav">
+                  <li class="nav-item lin">
+                    <div class="nav-link" aria-current="page" routerLink="/dashboard"><b>HOME</b></div>
+                  </li>
+                  <li class="nav-item lin">
+                    <div class="nav-link" routerLink="/dashboard/portfolio"><b>PORTFOLIO</b></div>
+                  </li>
+                  <li class="nav-item">
+                    <div class="nav-link lin" routerLink="/dashboard/about"><b>ABOUT US</b></div>
+                  </li>
+                  <li class="nav-item">
+                    <div class="nav-link lin" routerLink="/dashboard/contact"><b>CONTACT</b></div>
+                  </li>
+                  <li class="nav-item">
+                    <div class="btn Lout" routerLink="/login"><b>LogOut</b></div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+    </header>
+
+    <div>
+      <!-- <svg width="200" height="200">
+        <line x1="120" y1="20" x2="120" y2="180" stroke="green" stroke-width="5">
+        </line>
+      </svg> -->
+    </div>
+    <div>
+
+    </div>
+    <div>
+      
+    </div>
+    <router-outlet></router-outlet>
+
+
+    <!-- Footer -->
+    <footer class="page-footer font-small indigo foot">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-3 col-lg-3 col-md-3 col-sm-3 col-xl-3 add1">
+              West, Karave Nagar,<br/>Seawoods West, Kendriya Vihar,<br/>Sector 38, Seawoods,<br/> Mumbai, Maharashtra 400706<br/>Mob:121-121-1234
+          </div>
+          <div class="col-6 col-lg-6 col-md-6 col-sm-6 col-xl-6 text-center add2">
+            <p>“Design is not just what it looks like and feels like. <br/>
+                Design is how it works.”</p>
+          </div>
+          <div class="col-3 col-lg-3 col-md-3 col-sm-3 col-xl-3 text-center iccn">
+            <a class="footer-link text-decoration-none ic1" href="#">Register</a>            
+            <a class="footer-link text-decoration-none ic1" href="#">Forum</a>           
+            <a class="footer-link text-decoration-none ic1" href="#">Affiliate</a>
+            <a class="footer-link text-decoration-none ic1" href="#"> FAQ</a>
+            <div class="footer-social pt-4 text-center">           
+              <a href="#"><i class="fab fa-facebook-f ic"></i></a>            
+              <a href="#"><i class="fab fa-twitter ic"></i></a>            
+              <a href="#"><i class="fab fa-youtube ic"></i></a>            
+              <a href="#"><i class="fab fa-dribbble ic"></i></a> 
+              <a href="#"><i class="fab fa-linkedin ic"></i></a>
+              <a href="#"><i class="fab fa-instagram ic"></i></a>
+              <a href="#"><i class="fab fa-google ic"></i></a> 
+              <div>@blackboxdesign</div>             
+            </div>
+          </div>           
+        </div>
+      </div>
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3 col-sm-12 col-lg-12 copy">Copyright &copy 2020 BBD: All Rights Reserved
+      </div>
+    </footer>
+  </body>
+</html>
+
+
+
+
+
+

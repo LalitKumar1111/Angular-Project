@@ -1,0 +1,42 @@
+<div class="box">
+    <h3 class="text-center para">Project Planner</h3>
+
+    <div class="line1">
+        <label for="name">NAME</label><br>
+        <input type="text" id="name" placeholder="Enter your FullName" class="inp1" required><br>
+
+        <label for="Phone">CONTACT</label><br>
+        <input type="number" id="Phone" placeholder="(E-mail/Phone)" class="inp1" required>
+    </div><br>
+
+    <div class="line2">SERVICE</div>
+    <div class="form-floating">
+        <select class="form-select select12" id="floatingSelect" aria-label="Default select example">
+            <option selected class="select1">** Select Service **</option>
+            <option value="1" class="select2">POSTER</option>
+            <option value="2" class="select2">LOGO</option>
+            <option value="3" class="select2">AD-VIDEO</option>
+            <option value="4" class="select2">WEB DESIGN</option>
+            <option value="5" class="select2">OTHERS</option>
+        </select>
+    </div>
+
+    <div class="line3">COMPANY</div>
+    <div class="form-floating mara">
+        <select class="form-select select12" id="floatingSelect" aria-label="Default select example">
+            <option selected class="select1">** Type of Company **</option>
+            <option value="1" class="select2">E-Commerce</option>
+            <option value="2" class="select2">Restaurant</option>
+            <option value="3" class="select2">Tour & Travel</option>
+            <option value="4" class="select2">Real-Estate</option>
+            <option value="5" class="select2">OTHERS</option>
+        </select>
+    </div>
+    <div class="idea">
+        <label for="tarea">IDEAS</label><br>
+        <textarea name="address" id="tarea" placeholder=" You can share your ideas for a better result :)" cols="117" rows="4"></textarea>
+    </div>
+    
+    <button type="submit" class="bttn" routerLink="/dashboard/planner1">Submit</button>
+
+</div>

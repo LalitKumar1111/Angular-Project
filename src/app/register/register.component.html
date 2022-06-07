@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  </head>
+  <body>
+    <div class="box clr">
+    
+      <div class="text-center txt1">Signup</div>
+      <div class="container">
+        <form [formGroup]='userForm' (ngSubmit)="onSubmit()">
+          <div class="form-group" formGroupName='name'>
+            <label class="text-primary">First Name</label>
+            <input type="text" placeholder="Enter your First Name" class="form-control" [ngClass]="{'is-invalid':userForm.controls['name'].controls['fname'].invalid, 'is-valid':userForm.controls['name'].controls['fname'].valid}" formControlName="fname">
+            <!-- <p class="text-danger" *ngIf="userForm.controls['name'].controls['fname'].invalid">First Name is Required</p> -->
+    
+            <label class="text-primary">Last Name</label>
+            <input type="text" placeholder="Enter your Last Name" class="form-control" [ngClass]="{'is-invalid':userForm.controls['name'].controls['lname'].invalid, 'is-valid':userForm.controls['name'].controls['fname'].valid}"  formControlName="lname">
+            <!-- <p class="text-danger" *ngIf="userForm.controls['name'].controls['fname'].invalid">Last Name is Required</p> -->
+    
+          </div>
+    
+    
+          <div class="form-group">
+            <label class="text-primary">Phone</label>
+            <input type="text" placeholder="121-121-1212" class="form-control" [ngClass]="{'is-invalid':userForm.controls['phone'].invalid || userForm.controls['phone'].errors?.['minlength'], 
+            'is-valid':userForm.controls['phone'].valid}" formControlName="phone">
+          </div>
+          <!-- <p class="text-danger" *ngIf="userForm.controls['phone'].invalid">Phone Number is Required</p> -->
+          <!-- <p class="text-danger" *ngIf="userForm.controls['phone'].errors?.['minlength']">10 Digits Required</p> -->
+    
+    
+          <div class="form-group">
+            <label class="text-primary">E-mail</label>
+            <div><input type="text" placeholder="user@mail.com" name="email" id="email" formControlName="email" class="form-control user" [ngClass]="{'is-invalid':userForm.controls['email'].errors, 'is-valid':userForm.controls['email'].valid}"></div>
+            <!-- <p class="text-danger" *ngIf="userForm.controls['email'].invalid">E-mail ID is Required</p> -->
+          </div>
+    
+          <div class="form-group">
+              <label class="text-primary">Password</label>
+              <input type="password" class="form-control" [ngClass]="{'is-invalid':userForm.controls['pwd'].errors,'is-valid':userForm.controls['pwd'].valid}" formControlName="pwd">
+              <!-- <p class="text-danger" *ngIf="userForm.controls['pwd'].invalid">Set your Password</p> -->
+          </div>
+    
+          <div class="form-group">
+            <label class="text-primary">Confirm Password</label>
+              <input type="password" class="form-control" [ngClass]="{'is-invalid':userForm.controls['rpwd'].errors,'is-valid':userForm.controls['rpwd'].valid}" formControlName="rpwd">
+              <!-- <p class="text-danger" *ngIf="userForm.controls['rpwd'].invalid">Re-enter Password</p> -->
+          </div>
+    
+        </form><br>
+        <button class="bttn" (click)="submit()">Submit</button>
+        <p class="text-center txt2" [ngStyle]="{color:'colora'}">{{ab}}</p>
+      </div>
+    </div>
+    
+  </body>
+</html>

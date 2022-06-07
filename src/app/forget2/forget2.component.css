@@ -1,0 +1,18 @@
+.inp{
+    width: 300px;
+    height: 45px;
+}
+.otp{
+    color: blue;
+    margin-left: 350px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+.bttn{
+    width: 120px;
+    height: 45px;
+    margin-left: 350px;
+    margin-top: 8px;
+    background-color: blueviolet;
+    color: rgb(31, 24, 24);
+}
